@@ -19,7 +19,7 @@ var ToolExamples = (function () {
         if (error) {
           throw error;
         }
-        SuperAgent.post('http://localhost:8080/api/examples.json').set('Content-Type', 'text/plain').send(data).end(function (error, result) {
+        SuperAgent.post('https://development-plumber-api.herokuapp.com/api/examples.json').set('Content-Type', 'text/plain').send(data).end(function (error, result) {
           if (error) {
             throw error;
           }
