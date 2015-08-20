@@ -1,5 +1,5 @@
-let TestRunner = require('./TestRunner')
-let ToolExamples = require('./ToolExamples')
+let TestRunner = require('./testRunner')
+let ToolExamples = require('./toolExamples')
 let _ = require('lodash')
 let Mocha = require('mocha')
 let Suite = Mocha.Suite

@@ -4,8 +4,8 @@ var _createClass = (function () { function defineProperties(target, props) { for
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-var TestRunner = require('./TestRunner');
-var ToolExamples = require('./ToolExamples');
+var TestRunner = require('./testRunner');
+var ToolExamples = require('./toolExamples');
 var _ = require('lodash');
 var Mocha = require('mocha');
 var Suite = Mocha.Suite;
