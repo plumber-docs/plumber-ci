@@ -7,7 +7,7 @@ class ToolExamples {
         throw(error);
       }
       SuperAgent
-      .post('http://localhost:8080/api/examples.json')
+      .post('https://development-plumber-api.herokuapp.com/api/examples.json')
       .set('Content-Type', 'text/plain')
       .send(data)
       .end((error, result) => {
