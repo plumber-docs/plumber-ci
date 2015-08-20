@@ -5,7 +5,7 @@ let Mocha = require('mocha')
 let Suite = Mocha.Suite
 
 
-class PlumberCi {
+class PlumberTest {
   static runTests(directory) {
     console.log('Running Tests!')
     let mocha = new Mocha({timeout: 60000})
@@ -18,4 +18,4 @@ class PlumberCi {
   }
 }
 
-module.exports = PlumberCi
+module.exports = PlumberTest
