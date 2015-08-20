@@ -19,7 +19,6 @@ var TestRunner = (function () {
   _createClass(TestRunner, null, [{
     key: 'runTest',
     value: function runTest(example, suite) {
-      console.log(example);
       suite.addTest(new Test(example.name, function (done) {
         var testCommand = example.stepsAsTest;
         console.log('    Running test command: ' + testCommand);

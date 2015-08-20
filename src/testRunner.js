@@ -6,7 +6,6 @@ let exec = require('child_process').exec;
 let S = require('string')
 class TestRunner {
   static runTest(example, suite) {
-    console.log(example)
     suite.addTest(new Test(example.name, (done) => {
       let testCommand = example.stepsAsTest
       console.log(`    Running test command: ${testCommand}`)
