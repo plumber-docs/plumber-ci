@@ -2,16 +2,20 @@
   "name": "plumber-test",
   "version": "0.0.1",
   "description": "Tests the examples in continuous integration",
-  "main": "index.js",
+  "main": "compiled/index.js",
   "dependencies": {
-    "babel": "^5.8.21",
     "lodash": "^3.10.1",
     "mocha": "^2.2.5",
     "should": "^7.0.4",
     "string": "^3.3.1",
     "superagent": "^1.1.0"
   },
+  "devDependencies": {
+    "babel": "^5.8.21"
+  },
   "scripts": {
+    "compile": "babel -d compiled/ src/",
+    "prepublish": "npm run compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
