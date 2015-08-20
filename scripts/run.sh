@@ -1,1 +1,1 @@
-npm install && node -e "require('./index.js').runTests('../phony-rails')"
+npm install && node -e "require('.').runTests('../phony-rails')"
