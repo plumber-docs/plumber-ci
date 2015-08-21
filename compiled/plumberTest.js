@@ -26,8 +26,10 @@ var PlumberTest = (function () {
         _.each(toolExamples.examples, function (toolExample) {
           return TestRunner.runTest(toolExample, suite);
         });
-        mocha.run(function () {
-          return console.log("done");
+        mocha.run(function (failures) {
+          process.on('exit', function () {
+            process.exit(failures);
+          });
         });
       });
     }

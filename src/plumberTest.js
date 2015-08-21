@@ -13,7 +13,11 @@ class PlumberTest {
 
     ToolExamples.fromYamlFile(directory + '/plumber.yaml', (toolExamples) => {
       _.each(toolExamples.examples, (toolExample) => TestRunner.runTest(toolExample, suite))
-      mocha.run(() => console.log("done"))
+      mocha.run((failures) => {
+        process.on('exit', () => {
+          process.exit(failures);
+        });
+      })
     })
   }
 }
